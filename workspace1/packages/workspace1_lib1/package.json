@@ -1,0 +1,21 @@
+{
+  "name": "workspace1_lib1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "workspace2_lib1":"file:../../../workspace2/packages/workspace2_lib1",
+    "react":"17.0.0"
+  },
+  "dependenciesMeta": {
+    "workspace2_lib1": {
+      "injected": true
+    }
+  }
+}
