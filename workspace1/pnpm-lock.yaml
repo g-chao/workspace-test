@@ -13,12 +13,18 @@ importers:
       react:
         specifier: 17.0.0
         version: 17.0.0
+      workspace1_lib2:
+        specifier: workspace:*
+        version: link:../workspace1_lib2
       workspace2_lib1:
         specifier: file:../../../workspace2/packages/workspace2_lib1
         version: file:../workspace2/packages/workspace2_lib1
-    dependenciesMeta:
-      workspace2_lib1:
-        injected: true
+
+  packages/workspace1_lib2:
+    dependencies:
+      react:
+        specifier: 18.0.0
+        version: 18.0.0
 
 packages:
 
@@ -44,6 +50,13 @@ packages:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+    dev: false
+
+  /react@18.0.0:
+    resolution: {integrity: sha512-x+VL6wbT4JRVPm7EGxXhZ8w8LTROaxPXOqhlGyVSrv0sB1jkyFGgXxJ8LVoPRLvPR6/CIZGFmfzqUa2NYeMr2A==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
     dev: false
 
   file:../workspace2/packages/workspace2_lib1:

@@ -1,5 +1,5 @@
 {
-  "name": "workspace1_lib1",
+  "name": "workspace1_lib2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "workspace2_lib1":"file:../../../workspace2/packages/workspace2_lib1",
-    "workspace1_lib2":"workspace:*",
-    "react":"17.0.0"
+    "react":"18.0.0"
   }
 }
